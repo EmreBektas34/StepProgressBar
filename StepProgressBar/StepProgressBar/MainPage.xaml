@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Xamarin.Forms.StepProgressBar;assembly=Xamarin.Forms.StepProgressBar"
+             x:Class="StepProgressBar.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+        <Label Text="Sipariş Durumu" TextColor="Purple" Margin="15,0,0,0" FontSize="15" FontAttributes="Bold"/>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Transparent">
+            <control:StepProgressBar x:Name="stepbar1" Margin="0,0,0,0" Padding="15,0,30,0" StepColor="Purple"  Steps="4"  StepSelected="4" IsCircle="True" VerticalOptions="Start" HorizontalOptions="FillAndExpand" StepCanTouch="False" Orientation="Horizontal"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Transparent">
+            <Label Text="Sipariş Alındı" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextColor="Purple"  FontAttributes="None" FontSize="13"/>
+            <Label Text="Sipariş Kargolandı" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextColor="Purple"  FontAttributes="None" FontSize="13"/>
+            <Label Text="Sipariş Yolda" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextColor="Purple"  FontAttributes="None" FontSize="13"/>
+            <Label Text="Sipariş Teslim Edildi" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Start" HorizontalOptions="FillAndExpand" TextColor="Purple" FontAttributes="Bold" FontSize="13"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
